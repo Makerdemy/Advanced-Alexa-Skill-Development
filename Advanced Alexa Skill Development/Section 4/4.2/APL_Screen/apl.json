@@ -1,0 +1,67 @@
+{
+        "type": "APL",
+        "version": "1.7",
+        "license": "Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.\nSPDX-License-Identifier: LicenseRef-.amazon.com.-AmznSL-1.0\nLicensed under the Amazon Software License  http://aws.amazon.com/asl/",
+        "settings": {},
+        "theme": "dark",
+        "import": [
+            {
+                "name": "alexa-layouts",
+                "version": "1.3.0"
+            }
+        ],
+        "resources": [],
+        "styles": {},
+        "onMount": [],
+        "graphics": {},
+        "commands": {},
+        "layouts": {},
+        "mainTemplate": {
+            "parameters": [
+                "payload"
+            ],
+            "items": [
+                {
+                    "type": "Container",
+                    "items": [
+                        {
+                            "textAlign": "center",
+                            "textAlignVertical": "center",
+                            "fontSize": "65dp",
+                            "text": "Alexa Presentation Language",
+                            "type": "Text",
+                            "description": "Text to display on-screen",
+                            "id": "textbox1",
+                            "width": "100vw",
+                            "height": "20vh",
+                            "alignSelf": "center"
+                        },
+                        {
+                            "source": "https://m.media-amazon.com/images/G/01/DeveloperBlogs/AlexaBlogs/AlexaSkillsKit/Elon_blogv2._CB483497788_.png",
+                            "scale": "best-fill",
+                            "type": "Image",
+                            "description": "welcome screen",
+                            "id": "welcome_image",
+                            "alignSelf": "center",
+                            "width": "100vw",
+                            "height": "70vh"
+                        },
+                        {
+                            "type": "AlexaButton",
+                            "buttonText": "Touch for Audio",
+                            "alignSelf": "center",
+                            "primaryAction": [
+                                {
+                                    "type": "SendEvent",
+                                    "arguments": [
+                                        "user clicked the button"
+                                    ]
+                                }
+                            ],
+                            "id": "AlexaButton"
+                        }
+                    ]
+                }
+            ]
+        }
+}

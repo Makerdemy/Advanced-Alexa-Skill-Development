@@ -1,0 +1,162 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "barista conversations",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "barista"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "coffee",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "conpanna"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cappuccino"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "smoothie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "frappe"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mocha"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "espresso"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "latte"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cafe americano"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "warmth",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "cold",
+                                "synonyms": [
+                                    "cold drink",
+                                    "cool coffee",
+                                    "cold coffee",
+                                    "cool",
+                                    "chill"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hot",
+                                "synonyms": [
+                                    "hot drink",
+                                    "warm coffee",
+                                    "hot coffee",
+                                    "warm"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "addon",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "no topping",
+                                "synonyms": [
+                                    "nothing",
+                                    "plain"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brownie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chocolate fudge",
+                                "synonyms": [
+                                    "fudge"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hazelnut flavor",
+                                "synonyms": [
+                                    "hazelnut"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vanilla flavor",
+                                "synonyms": [
+                                    "vanilla"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "whipped cream",
+                                "synonyms": [
+                                    "cream"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

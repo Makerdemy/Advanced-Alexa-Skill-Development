@@ -1,0 +1,79 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "person profile skill",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ProfileIntent",
+                    "slots": [
+                        {
+                            "name": "detail",
+                            "type": "detail"
+                        }
+                    ],
+                    "samples": [
+                        "my {detail}",
+                        "registered {detail}",
+                        "get registered {detail}",
+                        "get my {detail}",
+                        "profile {detail}",
+                        "get profile {detail}",
+                        "my information",
+                        "profile information",
+                        "voice profile details",
+                        "my details",
+                        "get my details",
+                        "profile details"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "detail",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "number",
+                                "synonyms": [
+                                    "mobile number",
+                                    "mobile",
+                                    "phone",
+                                    "phone number"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "full name",
+                                "synonyms": [
+                                    "name",
+                                    "full name"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

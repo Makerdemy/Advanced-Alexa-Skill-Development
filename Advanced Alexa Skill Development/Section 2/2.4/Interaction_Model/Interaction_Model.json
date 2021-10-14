@@ -1,0 +1,105 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "voice reminder",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CreateReminderIntent",
+                    "slots": [
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "samples": [
+                                "at {time}",
+                                "{time}",
+                                "remind me at {time}",
+                                "set reminder at {time}"
+                            ]
+                        },
+                        {
+                            "name": "event",
+                            "type": "AMAZON.EventType"
+                        }
+                    ],
+                    "samples": [
+                        "remind me to {event}",
+                        "add reminder at {time}",
+                        "remind me at {time} to {event}",
+                        "set a reminder",
+                        "remind me in {time} to {event}",
+                        "set a reminder to {event}",
+                        "set a reminder at {time}",
+                        "create a reminder at {time}",
+                        "remind me",
+                        "add reminder",
+                        "create reminder"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "CreateReminderIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.663194173870.1379074892364"
+                            }
+                        },
+                        {
+                            "name": "event",
+                            "type": "AMAZON.EventType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.663194173870.1379074892364",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "at what time you want me to remind you?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "at what time you want to set an alarm?"
+                    }
+                ]
+            }
+        ]
+    }
+}

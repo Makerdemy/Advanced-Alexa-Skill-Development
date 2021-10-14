@@ -1,0 +1,90 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "reminder skill",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CreateReminderIntent",
+                    "slots": [
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "samples": [
+                                "at {time}",
+                                "{time}",
+                                "remind me at {time}",
+                                "set reminder at {time}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "remind me at {time}",
+                        "add reminder at {time}",
+                        "set a reminder at {time}",
+                        "create a reminder at {time}",
+                        "remind me",
+                        "add reminder",
+                        "create reminder"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "CreateReminderIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1302834550270.1148237433477"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1302834550270.1148237433477",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "at what time you want me to remind you?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "at what time you want to set an alarm?"
+                    }
+                ]
+            }
+        ]
+    }
+}

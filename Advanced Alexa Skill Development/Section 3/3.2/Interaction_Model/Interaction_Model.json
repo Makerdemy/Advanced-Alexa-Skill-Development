@@ -1,0 +1,145 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "grocery skill",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GroceryIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "item"
+                        }
+                    ],
+                    "samples": [
+                        "deliver {item} to home",
+                        "add {item} to my grocery list",
+                        "add {item} to my grocery delivery",
+                        "add {item}",
+                        "i want {item}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "item",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "oats"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "almonds"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sweet potatoes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "raisins"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lentils"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "onions"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "peas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tomatoes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bananas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "milk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "potatoes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "meat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cheese "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "butter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bread"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

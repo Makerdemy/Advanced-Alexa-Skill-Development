@@ -1,0 +1,503 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "car recommendation skill dialog",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CarIntent",
+                    "slots": [
+                        {
+                            "name": "seats",
+                            "type": "seats",
+                            "samples": [
+                                "make it {seats}",
+                                "recommend a {seats}",
+                                "suggest {seats}",
+                                "{seats}",
+                                "i prefer {seats}",
+                                "i want {seats}"
+                            ]
+                        },
+                        {
+                            "name": "layout",
+                            "type": "layout",
+                            "samples": [
+                                "make it {layout}",
+                                "suggest {layout}",
+                                "I prefer {layout}",
+                                "recommend a {layout}",
+                                "{layout}"
+                            ]
+                        },
+                        {
+                            "name": "fuel",
+                            "type": "fuel",
+                            "samples": [
+                                "make it {fuel}",
+                                "{fuel}",
+                                "recommend a {fuel} engine car",
+                                "suggest a {fuel}",
+                                "i prefer {fuel}",
+                                "i prefer {fuel} engine",
+                                "i want {fuel}",
+                                "i want {fuel} engine"
+                            ]
+                        },
+                        {
+                            "name": "size",
+                            "type": "size",
+                            "samples": [
+                                "make it {size}",
+                                "recommend a {size}",
+                                "suggest a {size}",
+                                "{size}",
+                                "i prefer {size}",
+                                "i want {size}"
+                            ]
+                        },
+                        {
+                            "name": "gear",
+                            "type": "gear",
+                            "samples": [
+                                "make it {gear}",
+                                "recommend a {gear}",
+                                "suggest {gear}",
+                                "{gear}",
+                                "i prefer {gear}",
+                                "i want {gear}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "i need {seats}",
+                        "suggest a {size} that has {fuel} and {gear}",
+                        "i prefer {layout} car with  {fuel} engine and {gear}",
+                        "i prefer {gear} cars with {fuel} engine",
+                        "i want a {seats} {size} with {fuel} engine and {gear} gear",
+                        "i want a {gear} car with {seats} seats",
+                        "suggest a {fuel} car that has {layout} transmission",
+                        "i want a car",
+                        "recommend me a car",
+                        "suggest a car",
+                        "suggest a {gear} {fuel} {layout} {size} with {seats}",
+                        "i want a {seats} {size} with {gear} {fuel} and {layout}",
+                        "i want {fuel} {gear} {layout} {seats} {size}",
+                        "I want  {fuel} {gear} {seats} {size}",
+                        "i want {gear} {layout} {seats} {size}",
+                        "i want {fuel} {layout} {gear} {size}",
+                        "i want {fuel} {layout} {seats} {size}",
+                        "i want {fuel} {gear} {layout} {seats}",
+                        "suggest a {layout} {seats} {size}",
+                        "suggest a {gear} {size} {seats}",
+                        "suggest a {gear} {layout} {size}",
+                        "suggest a {gear} {layout} {seats}",
+                        "suggest a {fuel} {seats} {size} car",
+                        "suggest a {fuel} {layout} {size}",
+                        "suggest a {fuel} {gear} {size}",
+                        "suggest a {fuel} {gear} {seats}",
+                        "suggest a {fuel} {seats} {size}",
+                        "suggest a {fuel} {layout} {seats}",
+                        "suggest a {fuel} {gear} {layout}",
+                        "suggest a {layout} {size}",
+                        "suggest a {gear} {size}",
+                        "suggest a {gear} {seats}",
+                        "suggest a {fuel} {size}",
+                        "suggest a {fuel} {seats}",
+                        "recommend a {fuel} {seats}",
+                        "recommend a {fuel} {layout}",
+                        "recommend a {size} {fuel}",
+                        "recommend a {seats} {size}",
+                        "recommend a {layout} {seats}",
+                        "recommend a {gear} {layout}",
+                        "recommend a {fuel} {gear}",
+                        "suggest a {size}",
+                        "suggest a {seats}",
+                        "suggest a {layout}",
+                        "suggest a {gear}",
+                        "suggest a {fuel}",
+                        "i prefer {layout}",
+                        "i prefer {fuel}",
+                        "i prefer {gear}",
+                        "i prefer {size}",
+                        "i prefer {seats}",
+                        "i want {fuel} {layout} {seats}",
+                        "i want {layout} {gear} {fuel}",
+                        "i want {layout} {gear} {seats}",
+                        "i want {gear} {fuel} {seats}",
+                        "i want {layout} {gear} {size}",
+                        "i want {layout} {seats} {size}",
+                        "i want {fuel} {seats} {size}",
+                        "i want {gear} {seats} {size}",
+                        "i want {seats} {layout}",
+                        "i want {gear} {layout}",
+                        "i want {fuel} {gear}",
+                        "i want {fuel} {seats}",
+                        "i want {fuel} {layout}",
+                        "i want {size} {layout}",
+                        "i want {gear} {size}",
+                        "i want {seats}",
+                        "i want {fuel} {size}",
+                        "i want {size}",
+                        "i want {gear}",
+                        "i want {seats} {fuel} {layout} {size}",
+                        "i want {size} with {fuel}  and {layout}",
+                        "i want {gear} {fuel} {size}",
+                        "i want {fuel} {layout} {size}",
+                        "i want {layout}",
+                        "i want {fuel}",
+                        "i want a {seats} {size}",
+                        "i want a {gear}",
+                        "i want a {size}",
+                        "i want {seats} {layout} {fuel} {size} with {gear}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "size",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "sedan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hatchback"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "gear",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "manual",
+                                "synonyms": [
+                                    "manual shift",
+                                    "manual gear",
+                                    "manual gear shift"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "auto",
+                                "synonyms": [
+                                    "automatic gear",
+                                    "auto gear shift",
+                                    "auto shift",
+                                    "automatic gear shift",
+                                    "automatic shift",
+                                    "auto gear",
+                                    "automatic"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "fuel",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "diesel",
+                                "synonyms": [
+                                    "diesel car",
+                                    "diesel engine"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "petrol",
+                                "synonyms": [
+                                    "petrol car",
+                                    "petrol engine"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "layout",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "rear",
+                                "synonyms": [
+                                    "rear wheel",
+                                    "rear wheel drive"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "front",
+                                "synonyms": [
+                                    "front wheel",
+                                    "front wheel drive"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "seats",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "seven",
+                                "synonyms": [
+                                    "7",
+                                    "seven seats",
+                                    "seven seater",
+                                    "seven"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "five",
+                                "synonyms": [
+                                    "5",
+                                    "five seats",
+                                    "five seater",
+                                    "five"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "CarIntent",
+                    "delegationStrategy": "SKILL_RESPONSE",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1380456955336"
+                    },
+                    "slots": [
+                        {
+                            "name": "seats",
+                            "type": "seats",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1267814142378.438851685235"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1380456955336.350093121180.1401298868215"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "layout",
+                            "type": "layout",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1267814142378.122061726183"
+                            }
+                        },
+                        {
+                            "name": "fuel",
+                            "type": "fuel",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1267814142378.901881079959"
+                            }
+                        },
+                        {
+                            "name": "size",
+                            "type": "size",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1267814142378.873481731550"
+                            }
+                        },
+                        {
+                            "name": "gear",
+                            "type": "gear",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1267814142378.1605699753734"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "SKILL_RESPONSE"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1267814142378.438851685235",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "five seater or seven seater?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "five seater or seven seater, which one do you want?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "how many seats do you prefer - five or seven?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "how many seats do you want in the car?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1267814142378.122061726183",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what transmission layout do you want?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is the preferred transmission layout?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "front-wheel drive or rear-wheel drive?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what transmission layout do you prefer - front or rear?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1267814142378.901881079959",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is the preferred engine type?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "which fuel must the car use - petrol or diesel?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what fuel type do you prefer?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "diesel engine or petrol engine?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what engine do you want - diesel or petrol?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1267814142378.873481731550",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is the preferred size class?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what size do you want - hatchback or sedan?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "do you prefer a hatchback or a sedan?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what size class of car do you want?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1267814142378.1605699753734",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Manual gear or auto gear?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "manual gear or automatic?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "do you want a manual gear shift or automatic?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what kind of gear shift do you want?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what gear shift do you prefer?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1380456955336",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You want a car with these features -  {size} {gear} , {fuel} , {layout} and {seats} . Is that correct?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "So you want a car with these features -  {size} {gear} , {fuel} , {layout} and {seats} huh?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1380456955336.350093121180.1401298868215",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "I can recommend a five seater or seven seater only"
+                    }
+                ]
+            }
+        ]
+    }
+}
