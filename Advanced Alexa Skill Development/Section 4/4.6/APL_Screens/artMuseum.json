@@ -1,0 +1,116 @@
+{
+    "document": {
+        "type": "APL",
+        "version": "1.6",
+        "license": "Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.\nSPDX-License-Identifier: LicenseRef-.amazon.com.-AmznSL-1.0\nLicensed under the Amazon Software License  http://aws.amazon.com/asl/",
+        "settings": {},
+        "theme": "dark",
+        "import": [],
+        "resources": [],
+        "styles": {},
+        "onMount": [],
+        "graphics": {},
+        "commands": {},
+        "layouts": {
+            "myPage": {
+                "item": {
+                    "type": "Container",
+                    "width": "100vw",
+                    "height": "100vh",
+                    "items": [
+                        {
+                            "source": "${internalImageUrl}",
+                            "type": "Image",
+                            "width": "100vw",
+                            "height": "80vh"
+                        },
+                        {
+                            "text": "${internalCaption}",
+                            "type": "Text",
+                            "id": "myCaptionText${internalIndex}",
+                            "speech": "${payload.data.properties.values[internalIndex].transformerOutput}",
+                            "width": "100vw",
+                            "height": "20vh"
+                        }
+                    ]
+                },
+                "parameters": [
+                    "internalIndex",
+                    "internalCaption",
+                    "internalImageUrl"
+                ]
+            }
+        },
+        "mainTemplate": {
+            "parameters": [
+                "payload"
+            ],
+            "items": [
+                {
+                    "type": "Container",
+                    "width": "100vw",
+                    "height": "100vh",
+                    "items": [
+                        {
+                            "data": "${payload.data.properties.values}",
+                            "type": "Pager",
+                            "onMount": [
+                                {
+                                    "type": "SpeakItem",
+                                    "componentId": "myCaptionText${event.source.value}"
+                                }
+                            ],
+                            "onPageChanged": [
+                                {
+                                    "type": "SpeakItem",
+                                    "componentId": "myCaptionText${event.source.value}"
+                                }
+                            ],
+                            "width": "100vw",
+                            "height": "100vh",
+                            "items": [
+                                {
+                                    "type": "myPage",
+                                    "internalIndex": "${index}",
+                                    "internalCaption": "${data.caption}",
+                                    "internalImageUrl": "${data.imageUrl}"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "datasources": {
+        "data": {
+            "properties": {
+                "values": [
+                    {
+                        "pageId": "1",
+                        "caption": "Damayanti, by Raja Ravi Varma, in the year 1899 ",
+                        "imageUrl": "https://i.pinimg.com/originals/b0/4f/a4/b04fa486b38ca1677d07c54fe1dd8c05.jpg"
+                    },
+                    {
+                        "pageId": "2",
+                        "caption": "The Wild Man, by Vincent Van Gogh",
+                        "imageUrl": "https://static01.nyt.com/images/2019/03/27/arts/26VANGOGH-BRITAIN-1/merlin_152403333_3552f80f-9675-4951-bc32-0b8cbdbfa090-superJumbo.jpg"
+                    },
+                    {
+                        "pageId": "3",
+                        "caption": "Almond Blossom, by Vincent Van Gogh",
+                        "imageUrl": "https://micrio.vangoghmuseum.nl/iiif/rAERt/full/1280,/0/default.jpg?hash=Tzll6IsNWJhIcBCfCptb3_1pjhILe4PG9TwH6qnr04A"
+                    }
+                ]
+            },
+            "transformers": [
+                {
+                    "inputPath": "values[*].caption",
+                    "outputName": "transformerOutput",
+                    "transformer": "textToSpeech"
+                }
+            ]
+        }
+    },
+    "sources": {}
+}

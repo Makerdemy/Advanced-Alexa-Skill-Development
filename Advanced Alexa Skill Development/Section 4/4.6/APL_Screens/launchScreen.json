@@ -1,0 +1,69 @@
+{
+    "type": "APL",
+    "version": "1.7",
+    "license": "Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.\nSPDX-License-Identifier: LicenseRef-.amazon.com.-AmznSL-1.0\nLicensed under the Amazon Software License  http://aws.amazon.com/asl/",
+    "settings": {},
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.4.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Container",
+                "items": [
+                    {
+                        "fontSize": "80dp",
+                        "textAlign": "center",
+                        "text": "Art Museum",
+                        "fontWeight": "bold",
+                        "textAlignVertical": "center",
+                        "type": "Text",
+                        "width": "100vw",
+                        "height": "20vh",
+                        "padding": "10%"
+                    },
+                    {
+                        "type": "AlexaImage",
+                        "imageWidth": "100vw",
+                        "imageHeight": "65vh",
+                        "imageSource": "https://i.ytimg.com/vi/I6R5fG3gqtk/maxresdefault.jpg",
+                        "imageScale": "best-fit",
+                        "imageAlignment": "center",
+                        "imageBlurredBackground": true
+                    },
+                    {
+                        "type": "AlexaButton",
+                        "buttonText": "Visit",
+                        "width": "50vw",
+                        "height": "15vh",
+                        "alignSelf": "center",
+                        "id": "visitButton",
+                        "primaryAction": [
+                            {
+                                "type": "SendEvent",
+                                "arguments": [
+                                    "user clicked the button"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "height": "100%",
+                "width": "100%"
+            }
+        ]
+    }
+}

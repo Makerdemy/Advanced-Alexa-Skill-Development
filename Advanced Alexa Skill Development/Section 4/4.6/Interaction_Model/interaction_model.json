@@ -1,0 +1,43 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "museum skill",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "VisitIntent",
+                    "slots": [],
+                    "samples": [
+                        "show",
+                        "show me",
+                        "let me take a look",
+                        "walk me through",
+                        "let me visit",
+                        "take me to the museum",
+                        "visit"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
