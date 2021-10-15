@@ -1,0 +1,84 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.4.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "layouts": {},
+    "mainTemplate": {
+        "items": [
+            {
+                "type": "Container",
+                "width": "100vw",
+                "height": "100vh",
+                "items": [
+                    {
+                        "type": "AlexaBackground",
+                        "backgroundImageSource": "http://www.imagenmore.ae/images/food-photography-coffee-.jpg"
+                    },
+                    {
+                        "type": "AlexaHeader",
+                        "headerTitle": "Add-on Menu",
+                        "headerSubtitle": "today's add-on menu"
+                    },
+                    {
+                        "textAlign": "center",
+                        "text": "Whipped Cream",
+                        "textAlignVertical": "center",
+                        "type": "Text",
+                        "width": "30vw",
+                        "height": "10vh"
+                    },
+                    {
+                        "textAlign": "center",
+                        "text": "Chocolate Fudge",
+                        "textAlignVertical": "center",
+                        "type": "Text",
+                        "width": "30vw",
+                        "height": "10vh"
+                    },
+                    {
+                        "textAlign": "center",
+                        "text": "Hazelnut",
+                        "textAlignVertical": "center",
+                        "type": "Text",
+                        "width": "30vw",
+                        "height": "10vh"
+                    },
+                    {
+                        "textAlign": "center",
+                        "text": "Vanilla",
+                        "textAlignVertical": "center",
+                        "type": "Text",
+                        "width": "30vw",
+                        "height": "10vh"
+                    },
+                    {
+                        "textAlign": "end",
+                        "text": "Brownie",
+                        "textAlignVertical": "center",
+                        "fontWeight": "normal",
+                        "type": "Text",
+                        "width": "90vw",
+                        "height": "10vh"
+                    },
+                    {
+                        "textAlign": "end",
+                        "text": "Brown Sugar",
+                        "textAlignVertical": "center",
+                        "fontWeight": "normal",
+                        "type": "Text",
+                        "width": "90vw",
+                        "height": "10vh"
+                    }
+                ]
+            }
+        ]
+    }
+}
