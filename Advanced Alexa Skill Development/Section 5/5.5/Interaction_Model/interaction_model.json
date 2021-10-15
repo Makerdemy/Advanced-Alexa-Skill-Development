@@ -1,0 +1,175 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "car recommendation skill",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "how are you",
+                        "say hi world",
+                        "say hi",
+                        "hi",
+                        "say hello world",
+                        "say hello"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "size",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "sedan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hatchback"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "engine",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "electric",
+                                "synonyms": [
+                                    "ev",
+                                    "electric engine",
+                                    "electric car"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diesel",
+                                "synonyms": [
+                                    "diesel car",
+                                    "diesel engine"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "petrol",
+                                "synonyms": [
+                                    "petrol car",
+                                    "petrol engine"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "gear",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "manual",
+                                "synonyms": [
+                                    "manual gear shift",
+                                    "manual gear",
+                                    "manual shift"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "auto",
+                                "synonyms": [
+                                    "automatic gear",
+                                    "auto shift",
+                                    "automatic gear shift",
+                                    "auto gear",
+                                    "automatic"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "layout",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "rear",
+                                "synonyms": [
+                                    "rear wheel",
+                                    "rear wheel drive"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "front",
+                                "synonyms": [
+                                    "front wheel",
+                                    "front wheel drive"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "seat",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "seven",
+                                "synonyms": [
+                                    "seven seats",
+                                    "seven seater"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "five",
+                                "synonyms": [
+                                    "five seater",
+                                    "five seats"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "dummy"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

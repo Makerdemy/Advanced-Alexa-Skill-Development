@@ -1,0 +1,56 @@
+{
+    "hatchback-petrol-auto-front-5": {
+        "size": "hatchback",
+        "fuel": "petrol",
+        "gear": "auto",
+        "layout": "front",
+        "SSET": "hatchback-petrol-auto-front-5",
+        "seat": "5",
+        "name": "Polo"
+    },
+    "sedan-petrol-auto-rear-5": {
+        "size": "sedan",
+        "engine": "petrol",
+        "gear": "auto",
+        "layout": "rear",
+        "SSET": "sedan-petrol-auto-rear-5",
+        "seat": "5",
+        "name": "Honda Civic"
+    },
+    "sedan-petrol-auto-front-5": {
+        "size": "sedan",
+        "engine": "petrol",
+        "gear": "auto",
+        "layout": "front",
+        "SSET": "sedan-petrol-auto-front-5",
+        "seat": "5",
+        "name": "Vento"
+    },
+    "sedan-diesel-auto-front-5": {
+        "size": "sedan",
+        "engine": "diesel",
+        "gear": "auto",
+        "layout": "front",
+        "SSET": "sedan-diesel-auto-front-5",
+        "seat": "5",
+        "name": "Honda City"
+    },
+    "hatchback-petrol-manual-front-5": {
+        "size": "hatchback",
+        "engine": "petrol",
+        "gear": "manual",
+        "layout": "front",
+        "SSET": "hatchback-petrol-manual-front-5",
+        "seat": "5",
+        "name": "Swift"
+    },
+    "hatchback-diesel-auto-front-5": {
+        "size": "hatchback",
+        "engine": "diesel",
+        "gear": "auto",
+        "layout": "front",
+        "seat": "5",
+        "SSET": "hatchback-diesel-auto-front-5",
+        "name": "i20"
+    }
+}
